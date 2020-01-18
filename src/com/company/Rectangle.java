@@ -1,6 +1,6 @@
 package com.company;
 
-public class Rectangle extends Figure implements GetArea {
+public class Rectangle extends Figure implements AreaFinder {
 
     /*
     Вычислеение площади прямоугольника по принципу:
@@ -9,6 +9,8 @@ public class Rectangle extends Figure implements GetArea {
 
     int side1 = 10;
     int side2 = 5;
+    int side3;
+    int side4;
     int areaResultOfRectangle = side1 * side2;
 
     @Override

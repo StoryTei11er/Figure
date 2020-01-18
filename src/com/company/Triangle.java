@@ -1,6 +1,6 @@
 package com.company;
 
-public class Triangle extends Figure implements GetArea {
+public class Triangle extends Figure implements AreaFinder {
 
     /*
     Вычисление площади прямоугольного треугольника по принципу:
@@ -9,6 +9,7 @@ public class Triangle extends Figure implements GetArea {
 
     int side1 = 10;
     int side2 = 5;
+    int side3;
     int areaResultOfTriangle = (side1 * side2) / 2;
 
     @Override

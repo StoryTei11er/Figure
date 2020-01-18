@@ -1,6 +1,6 @@
 package com.company;
 
-public class Square extends Figure implements GetArea {
+public class Square extends Figure implements AreaFinder {
 
     /*
     Вычисление площади квадрата по принципу:
@@ -9,6 +9,8 @@ public class Square extends Figure implements GetArea {
 
     int side1 = 4;
     int side2 = 4;
+    int side3;
+    int side4;
     int areaResultOfSquare = side1 * side2;
 
     @Override

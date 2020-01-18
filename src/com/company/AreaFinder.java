@@ -1,6 +1,6 @@
 package com.company;
 
-public interface GetArea {
+public interface AreaFinder {
 
     void area();
 }

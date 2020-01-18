@@ -1,6 +1,6 @@
 package com.company;
 
-public class Circle extends Figure implements GetArea {
+public class Circle extends Figure implements AreaFinder {
 
     /*
     Вычисление площади круго по принципу:
