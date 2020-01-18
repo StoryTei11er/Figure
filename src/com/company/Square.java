@@ -7,11 +7,11 @@ public class Square extends Figure implements AreaFinder {
     площадь равна квадрату стороны квадрата.
     */
 
-    int side1 = 4;
-    int side2 = 4;
-    int side3;
-    int side4;
     int areaResultOfSquare = side1 * side2;
+
+    public Square(int side1, int side2, int side3, int side4) {
+        super(side1, side2, side3, side4);
+    }
 
     @Override
     public void area() {

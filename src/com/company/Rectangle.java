@@ -7,11 +7,11 @@ public class Rectangle extends Figure implements AreaFinder {
     одну сторону прямоугольника умножить на его вторую сторону.
     */
 
-    int side1 = 10;
-    int side2 = 5;
-    int side3;
-    int side4;
     int areaResultOfRectangle = side1 * side2;
+
+    public Rectangle(int side1, int side2, int side3, int side4) {
+        super(side1, side2, side3, side4);
+    }
 
     @Override
     public void area() {

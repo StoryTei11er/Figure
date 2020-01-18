@@ -7,9 +7,11 @@ public class Circle extends Figure implements AreaFinder {
     произведение квадрата радиуса умноженного на число пи.
     */
 
-    double radiys = 6;
-    final double Pi = 3.14;
     double areaResultOfCircle = Pi * (radiys * radiys);
+
+    public Circle(double radiys) {
+        super(radiys);
+    }
 
     @Override
     public void area() {
