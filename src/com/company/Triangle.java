@@ -1,22 +1,25 @@
 package com.company;
 
-public class Triangle extends Figure implements GetArea {
+public class Triangle extends Figure {
 
     /*
     Вычисление площади прямоугольного треугольника по принципу:
     длинну одного катета умножить на длинну второго и разделить на два.
     */
 
-    int side1 = 10;
-    int side2 = 5;
-    int areaResultOfTriangle = (side1 * side2) / 2;
+    private double side1;
+    private double side2;
+    private double side3;
+
+    public Triangle(double side1, double side2, double side3) {
+        this.side1 = side1;
+        this.side2 = side2;
+        this.side3 = side3;
+    }
 
     @Override
-    public void area() {
-
+    void area() {
+        double areaResultOfTriangle = (side1 * side2) / 2;
         System.out.println("Area of triangle is: " + areaResultOfTriangle + " cm2");
     }
 }
-
-
-
